@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Password Generator"
+msgstr "Генератор паролей"
+
+msgid "Password Length (8-24):"
+msgstr "Длина пароля (8-24):"
+
+msgid "Quantity (1-20):"
+msgstr "Количество паролей (1-20):"
+
+msgid "Lowercase (a-z) [Required]"
+msgstr "Строчные (a-z) [Обязательно]"
+
+msgid "Uppercase (A-Z)"
+msgstr "Прописные (A-Z)"
+
+msgid "Digits (0-9)"
+msgstr "Цифры (0-9)"
+
+msgid "Special chars"
+msgstr "Спецсимволы"
+
+msgid "Exclude similar (O/0, I/l/1)"
+msgstr "Исключить похожие (O/0, I/l/1)"
+
+msgid "Generate"
+msgstr "Сгенерировать"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "No characters available for generation!"
+msgstr "Нет доступных символов для генерации!"
+
+msgid "Generated Passwords:"
+msgstr "Результат:"
