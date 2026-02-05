@@ -13,5 +13,5 @@ Interface: English, Russian, Spanish.
 # Generador de contraseñas aleatorias
 
 Está chequeado en Linux Mint Cinnamon 22.3 y Windows 11.
-Esta aplicación genera contraseñas aleatorias con longitud desde 8 hasat 24 símbolos. Puedes elegir cuales conjuntos de caracteros quieres usar.
+Esta aplicación genera contraseñas aleatorias con longitud desde 8 hasta 24 símbolos. Puedes elegir cuales conjuntos de caracteros quieres usar.
 Interfaz: inglés, ruso, español.

@@ -8,8 +8,27 @@ import os
 
 locales_dir = os.path.join(os.path.dirname(__file__), 'locales')
 
-sys_locale = locale.getdefaultlocale()[0]
-lang_code = sys_locale[:2] if sys_locale else 'en'
+LANG_MAP = {
+    'russian': 'ru',
+    'ru': 'ru',
+    'spanish': 'es',
+    'es': 'es',
+}
+
+lang_code = 'en'
+
+try:
+    locale.setlocale(locale.LC_ALL, '')
+    sys_locale_tuple = locale.getlocale()
+    sys_lang_str = sys_locale_tuple[0]
+
+    if sys_lang_str:
+        detected_key = sys_lang_str.partition('_')[0].lower()
+        lang_code = LANG_MAP.get(detected_key, 'en')
+
+except Exception as e:
+    print(f"Locale error: {e}")
+    lang_code = 'en'
 
 mo_filename = os.path.join(locales_dir, f"{lang_code}.mo")
 
@@ -17,7 +36,7 @@ try:
     with open(mo_filename, "rb") as fp:
         trans = gettext.GNUTranslations(fp)
         _ = trans.gettext
-except (IOError, OSError):
+except (IOError, OSError, FileNotFoundError):
     _ = lambda s: s
 
 
